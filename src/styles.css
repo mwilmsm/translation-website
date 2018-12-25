@@ -31,3 +31,16 @@
 .nested-grid .p-col-4 {
     padding-bottom: 1em;
 }
+
+.p-grid {
+    display: flex;
+    margin-top: .5em;
+}
+
+.p-col {
+    flex-grow: 1;
+}
+
+.button {
+    margin-right: .5em;
+}

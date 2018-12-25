@@ -32,7 +32,7 @@ export class ChapterComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.columns = [1, 2, 3];
+    this.columns = [1];
   }
 
   addColumn() {
