@@ -1,19 +1,12 @@
-<div style="text-align:center">Chapter Title Goes Here</div>
+<div style="text-align:center"><h4>Chapter Title Goes Here</h4></div>
 
-<div class="content-section implementation">
-  <div class="p-grid">
-    <div class="p-col">
-      <div class="box">Translation</div>
-    </div>
-    <div class="p-col" [@animation]="'visible'" [hidden]="!showTn">
-      <div class="box">Translator's Notes</div>
-    </div>
-    <div class="p-col" [@animation]="'visible'" [hidden]="!showJp">
-      <div class="box">Original Japanese Text</div>
-    </div>
-    <button pButton type="button" icon="pi pi-plus" title="Show/Hide Jp" (click)="toggleJp()"></button>
-    <button pButton type="button" icon="pi pi-minus" title="Show/Hide Tn" (click)="toggleTn()"></button>
-    </div>
+<div *ngFor="let chunk of chapter.chunks" class="content-section implementation">
+  <mw-chapter-chunk [chunk]="chunk" [showJp]="showJp" [showTn]="showTn"></mw-chapter-chunk>
+</div>
+
+<div class="content-section p-grid">
+  <button pButton type="button" icon="pi pi-pencil" title="Show/Hide Tn" (click)="showTn = !showTn"></button>
+  <button pButton type="button" icon="pi pi-globe" title="Show/Hide Jp" (click)="showJp = !showJp"></button>
 </div>
 
 <div class="" style="text-align:center">

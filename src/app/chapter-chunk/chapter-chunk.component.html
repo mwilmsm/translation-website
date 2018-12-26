@@ -1,0 +1,11 @@
+<div class="p-grid">
+  <div class="p-col">
+    <div class="box">{{chunk.translatedText}}</div>
+  </div>
+  <div class="p-col" [@animation]="'visible'" [hidden]="!showTn">
+    <div class="box" [hidden]="!chunk.translatorsNotes">{{chunk.translatorsNotes}}</div>
+  </div>
+  <div class="p-col" [@animation]="'visible'" [hidden]="!showJp">
+    <div class="box">{{chunk.originalText}}</div>
+  </div>
+</div>

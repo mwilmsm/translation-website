@@ -1,14 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import {trigger,state,style,transition,animate,AnimationEvent} from '@angular/animations';
-
-export interface ChapterChunk {
-  translatedText: string;
-  translatorsNotes: string;
-  originalText: string;
-}
+import { trigger,state,style,transition,animate,AnimationEvent } from '@angular/animations';
+import { ChapterChunk } from 'src/app/chapter-chunk/chapter-chunk.component';
 
 export interface Chapter {
   chunks: ChapterChunk[];
+  title: string;
+  chapterNumber: number;
 }
 
 @Component({
@@ -41,19 +38,32 @@ export class ChapterComponent implements OnInit {
   public showTn: boolean = false;
   public showJp: boolean = false;
 
+  public chapter: Chapter;
+
   constructor() { }
 
   ngOnInit() {
     this.columns = [1];
     // call back-end and request chapter json data, load it in
+    this.chapter = this.fakeInitChapter();
   }
 
-  addColumn() {
-      this.columns.push(this.columns.length);
-  }
-
-  removeColumn() {
-      this.columns.splice(-1, 1);
+  private fakeInitChapter() {
+    return {
+      title: 'This is Chapter 1',
+      chapterNumber: 1,
+      chunks: [
+        {
+          translatedText: 'This text is translated',
+          translatorsNotes: 'This is the first translator\'s note.',
+          originalText: 'This is the first original text block.',
+        },
+        {
+          translatedText: 'This text is the second translated text',
+          originalText: 'This is the second original text block.',
+        },
+      ]
+    }
   }
 
   public toggleTn() {

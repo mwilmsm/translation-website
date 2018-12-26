@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChapterComponent } from './chapter/chapter.component';
+import { ChapterChunkComponent } from './chapter-chunk/chapter-chunk.component';
 
 import { PanelModule } from 'primeng/panel';
 import { ButtonModule } from 'primeng/button';
@@ -12,7 +13,8 @@ import { ButtonModule } from 'primeng/button';
 @NgModule({
   declarations: [
     AppComponent,
-    ChapterComponent
+    ChapterComponent,
+    ChapterChunkComponent
   ],
   imports: [
     BrowserModule,
