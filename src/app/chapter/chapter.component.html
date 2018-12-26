@@ -1,15 +1,21 @@
-<p>
-  chapter works!
-</p>
+<div style="text-align:center">Chapter Title Goes Here</div>
 
 <div class="content-section implementation">
-  <h3>Dynamic</h3>
-  <button pButton type="button" icon="pi pi-plus" title="Add Column" (click)="addColumn()" [disabled]="columns.length === 20"></button>
-  <button pButton type="button" icon="pi pi-minus" title="Remove Column" (click)="removeColumn()" [disabled]="columns.length === 1"></button>
-
   <div class="p-grid">
-    <div class="p-col" *ngFor="let col of columns; let i=index" [@animation]="'visible'">
-      <div class="box">{{i + 1}}</div>
+    <div class="p-col">
+      <div class="box">Translation</div>
     </div>
-  </div>
+    <div class="p-col" [@animation]="'visible'" [hidden]="!showTn">
+      <div class="box">Translator's Notes</div>
+    </div>
+    <div class="p-col" [@animation]="'visible'" [hidden]="!showJp">
+      <div class="box">Original Japanese Text</div>
+    </div>
+    <button pButton type="button" icon="pi pi-plus" title="Show/Hide Jp" (click)="toggleJp()"></button>
+    <button pButton type="button" icon="pi pi-minus" title="Show/Hide Tn" (click)="toggleTn()"></button>
+    </div>
+</div>
+
+<div class="" style="text-align:center">
+  <a href="thing">Previous Chapter</a> | <a href="thing">Table of Contents</a> | <a href="thing">Next Chapter</a>
 </div>
