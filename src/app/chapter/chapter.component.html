@@ -6,13 +6,13 @@
 
 <div class="content-section p-grid">
   <p-button
-      icon="fa fa-adn"
-      title="Show/Hide Tn"
+      icon="fa fa-comment"
+      label="{{ getShowHideTnLabel() }}"
       [ngStyle]=""
       (click)="showTn = !showTn"></p-button>
   <p-button
-      icon="pi pi-globe"
-      title="Show/Hide Jp"
+      icon="fa fa-book"
+      label="{{ getShowHideJpLabel() }}"
       [ngStyle]=""
       (click)="showJp = !showJp"></p-button>
 </div>
