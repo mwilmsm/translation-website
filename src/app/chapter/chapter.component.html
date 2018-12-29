@@ -5,8 +5,16 @@
 </div>
 
 <div class="content-section p-grid">
-  <button pButton type="button" icon="pi pi-pencil" title="Show/Hide Tn" (click)="showTn = !showTn"></button>
-  <button pButton type="button" icon="pi pi-globe" title="Show/Hide Jp" (click)="showJp = !showJp"></button>
+  <p-button
+      icon="fa fa-adn"
+      title="Show/Hide Tn"
+      [ngStyle]=""
+      (click)="showTn = !showTn"></p-button>
+  <p-button
+      icon="pi pi-globe"
+      title="Show/Hide Jp"
+      [ngStyle]=""
+      (click)="showJp = !showJp"></p-button>
 </div>
 
 <div class="" style="text-align:center">

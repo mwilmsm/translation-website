@@ -1,11 +1,11 @@
-<div class="p-grid">
-  <div class="p-col">
+<div class="p-grid ui-g">
+  <div class="p-col" [ngClass]="{'ui-g-12' : getNumColumns() === 1, 'ui-g-6' : getNumColumns() === 2, 'ui-g-4': getNumColumns() === 3}">
     <div class="box">{{chunk.translatedText}}</div>
   </div>
-  <div class="p-col" [@animation]="'visible'" [hidden]="!showTn">
+  <div class="p-col" [@animation]="'visible'" [hidden]="!showTn" [ngClass]="{'ui-g-6' : getNumColumns() === 2, 'ui-g-4': getNumColumns() === 3}">
     <div class="box" [hidden]="!chunk.translatorsNotes">{{chunk.translatorsNotes}}</div>
   </div>
-  <div class="p-col" [@animation]="'visible'" [hidden]="!showJp">
-    <div class="box">{{chunk.originalText}}</div>
+  <div class="p-col" [@animation]="'visible'" [hidden]="!showJp" [ngClass]="{'ui-g-6' : getNumColumns() === 2, 'ui-g-4': getNumColumns() === 3}">
+    <div class="box" >{{chunk.originalText}}</div>
   </div>
 </div>

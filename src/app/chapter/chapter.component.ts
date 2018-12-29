@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { trigger,state,style,transition,animate,AnimationEvent } from '@angular/animations';
 import { ChapterChunk } from 'src/app/chapter-chunk/chapter-chunk.component';
 
 export interface Chapter {
@@ -12,25 +11,6 @@ export interface Chapter {
   selector: 'mw-chapter',
   templateUrl: './chapter.component.html',
   styles:[],
-  animations: [
-    trigger('animation', [
-      state('visible', style({
-        transform: 'translateX(0)',
-        opacity: 1
-      })),
-      transition('void => *', [
-        style({ transform: 'translateX(100%)', opacity: 0 }),
-        animate('400ms ease-out')
-      ]),
-      transition('* => void', [
-        animate(('400ms ease-in'), style({
-          height: 0,
-          opacity: 0,
-          transform: 'translateX(100%)'
-        }))
-      ])
-    ])
-  ],
 })
 export class ChapterComponent implements OnInit {
 
