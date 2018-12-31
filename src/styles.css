@@ -3,7 +3,7 @@
 .box,
 .sample-layout > div {
     background-color: #cce4f7;
-    text-align: center;
+    text-align: left;
     padding-top: 1em;
     padding-bottom: 1em;
     border-radius: 4px;

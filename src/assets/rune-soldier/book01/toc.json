@@ -1,0 +1,30 @@
+{
+  "bookSeries": "Louie the Rune Soldier",
+  "bookTitle": "",
+  "chapterTitle": "Table of Contents",
+  "chapterNumber": 0,
+  "chunks": [
+    {
+      "translatedText": "Chapter I - The Maverick of the Magician's Guild",
+      "translatorsNotes": "",
+      "originalText": "第 Ⅰ 章 　 魔術師 ギルド の 異端児"
+    },
+    {
+      "translatedText": "Chapter II - The Other Side of the Door",
+      "originalText": "第 Ⅱ 章 　 閉ざさ れ た 扉 の 向こう"
+    },
+    {
+      "translatedText": "Chapter III - Broken Wand",
+      "originalText": "第 Ⅲ 章 　 折れ た 杖"
+    },
+    {
+        "translatedText": "Chapter IV - Conflict in the Sacred Grove (?)",
+        "translatorsNotes": "Strictly, this is 'Dispute's Shrine Grove' but I'm not sure how to cleanly translate that.",
+        "originalText": "第 Ⅳ 章 　 争い の 森"
+    },
+    {
+        "translatedText": "Chapter V - That's the Reason for Love",
+        "originalText": "第 Ⅴ 章 　 それ は 愛 ゆえ に"
+    }
+  ]
+}

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ChapterChunk } from 'src/app/chapter-chunk/chapter-chunk.component';
 
+import * as chapter01 from 'src/assets/rune-soldier/book01/chapter01.json';
+
 export interface Chapter {
   chunks: ChapterChunk[];
   title: string;
@@ -29,34 +31,8 @@ export class ChapterComponent implements OnInit {
   }
 
   private fakeInitChapter() {
-    return {
-      title: 'This is Chapter 1',
-      chapterNumber: 1,
-      chunks: [
-        {
-          translatedText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis neque mauris.
-            Maecenas eget sagittis nisi, efficitur fermentum felis. Suspendisse sodales urna sed ex sodales, 
-            feugiat feugiat enim aliquam. Curabitur sed tincidunt felis. Nam fringilla at enim pulvinar mattis.
-            Donec commodo maximus quam a posuere. Vestibulum cursus ipsum id hendrerit euismod. Maecenas posuere,
-            lacus sit amet posuere ultricies, libero lectus dignissim orci, a dapibus arcu turpis ut odio.
-            Phasellus sodales elit in dolor fermentum, sit amet consequat augue porta. Nunc ultricies, arcu a ornare
-            aliquam, est sem dignissim neque, in elementum magna velit vel magna. Donec auctor felis in semper
-            condimentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce mi nulla, tempor
-            tristique cursus sed, congue ut mi.`,
-          translatorsNotes: 'This is the first translator\'s note.',
-          originalText: 'This is the first original text block.',
-        },
-        {
-          translatedText: 'This text is the second translated text',
-          originalText: 'This is the second original text block.',
-        },
-        {
-          translatedText: 'This text is translated',
-          translatorsNotes: 'This is the second translator\'s note.',
-          originalText: 'This is the third original text block.',
-        },
-      ]
-    }
+    console.log(chapter01.default);
+    return chapter01.default;
   }
 
   public toggleTn() {
