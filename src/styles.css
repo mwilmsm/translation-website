@@ -6,6 +6,7 @@
     text-align: left;
     padding-top: 1em;
     padding-bottom: 1em;
+    padding-left: inherit;
     border-radius: 4px;
 }
 
@@ -43,4 +44,13 @@
 
 .button {
     margin-right: .5em;
+}
+
+.float{
+	position:fixed;
+	width:140px;
+	height:60px;
+	bottom:40px;
+	right:0px;
+	text-align:right;
 }

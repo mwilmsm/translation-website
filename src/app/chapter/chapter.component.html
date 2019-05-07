@@ -1,15 +1,16 @@
-<div style="text-align:center"><h4>Chapter Title Goes Here</h4></div>
+<div style="text-align:center"><h4>Chapter {{ chapter.default.chapterNumber }} - {{ chapter.default.chapterTitle }}</h4></div>
 
-<div *ngFor="let chunk of chapter.chunks" class="content-section implementation">
+<div *ngFor="let chunk of chapter.default.chunks" class="content-section implementation">
   <mw-chapter-chunk [chunk]="chunk" [showJp]="showJp" [showTn]="showTn"></mw-chapter-chunk>
 </div>
 
-<div class="content-section p-grid">
+<div class="float content-section p-grid">
   <p-button
       icon="fa fa-comment"
       label="{{ getShowHideTnLabel() }}"
       [ngStyle]=""
       (click)="showTn = !showTn"></p-button>
+      <br />
   <p-button
       icon="fa fa-book"
       label="{{ getShowHideJpLabel() }}"

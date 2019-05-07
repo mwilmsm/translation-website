@@ -1,36 +1,39 @@
 {
     "bookTitle":"",
-    "chapterTitle": "Chapter I - The Maverick of the Magician's Guild",
+    "chapterTitle": "The Maverick of the Magician's Guild",
     "chapterNumber": 1,
     "chunks": [
         {
-            "translatedText": "The era of magic came to a close with the fall of what was known as the Castour Kingdom five hundred years ago. After that was what is known as either \"The Age of New Kingdoms,\" or, \"The Age of Swords.\"",
+            "translatedText": "The Era of Magic came to a close with the fall of what was known as the Castour Kingdom five hundred years ago. After that was what is known as either \"The Age of New Kingdoms,\" or, \"The Age of Swords.\"",
             "originalText": "古代 王国 として 知ら れる カストゥール 王国 の 滅亡 とともに、 魔法 の 時代 が 終わっ た。 　 およそ 五百 年前 の 出来事 で ある。その後 に 続く 時代 は〝 新 王国 期〟 あるいは〝 剣 の 時代〟 と 呼ば れ て いる。"
         },
         {
-            "translatedText": "After the Age of Magic, barbarians and contemptible people (?) used the power of the sword to create new kingdoms one after another. Countless kingdoms have come and gone in the last five hundred years.",
-            "translatorsNotes": "\"蔑まれた 人間\" is \"a group of people who are despised,\" so I have no better idea how to translate this. :( -mw",
+            "translatedText": "After the Age of Magic, those despised as barbarians used the power of the sword to create new kingdoms one after another. Countless kingdoms have come and gone in the last five hundred years.",
             "originalText": "魔法 の 時代 に 蛮族 と 蔑ま れ た 人間 が、 剣 の 力 によって 新しい 王国 を 次々 と 興し て いっ た から だ。 五百 年 もの あいだ に、 いくつ もの 王国 が 生まれ、 あるいは 滅ん で いっ た。"
         },
         {
-            "translatedText": "",
-            "originalText": ""
+            "translatedText": "Thus, in the continent of Alecrast, one of the newest kingdoms is called Ohfun. By the sword of the Dragon Slayer Hero Rijaerl, \"The Sword Kingdom\" was established.",
+            "originalText": "そして、 アレクラスト 大陸 で、 もっとも 最近、 建国 さ れ た 王国 が、 ここ オー ファン だ。〝 竜 殺し〟 の 英雄 リジャール の 剣 によって 興さ れ た ゆえ、〝 剣 の 王国〟 と 呼称 さ れ て いる。"
+        },
+        {
+            "translatedText": "However, in both the Age of Swords and the Sword Kingdom, the magic of the ancient kingdoms was not completely lost. \"Magicians\", as they are called, use the ancient magics.",
+            "originalText": "だが、 剣 の 時代、 それ も この 剣 の 王国 において も、 古代 王国 の 魔法 文明 は 完全 に 失わ れ た わけ では ない。〝 魔術師〟 と 呼ば れる 古代 の 魔術 の 使い手 たち が いる から だ。"
+        },
+        {
+            "translatedText": "And, among these magicians, there are exceedingly rare ones that are good at fighting. ",
+            "originalText": "そして、 そういう 魔術師 たち の なか に 極めて 希 だ が、 戦い の 技 に 長け た 者 も いる。 　 魔法 を 操る 戦士 ゆえ、 彼ら は〝 魔法 戦士〟 と 呼ば れ て いる。"
+        },
+        {
+            "translatedText": "Because they are warriors who can wield magic, they are called \"Rune Soldiers.\"",
+            "originalText": "魔法を操戦士ゆえ、彼らは〝魔法戦士〟と呼ばれている"
         },
         {
             "translatedText": "",
-            "originalText": ""
+            "originalText": "「あいかわらず だ な」 　 若者 の 右 隣 に 座っ て いる 別 の 若者 が、 呆れ て いる のか 感心 し て いる のか 分から ない よう な 口調 で 言っ た。 「この 体格 だ もの、 一 樽 だって 一気に 飲みほせ る わよ」 　 同じ テーブル を 囲む 五人 の なか で 唯一 の 女性 が、 隣 に 座る 巨漢 を 横目 で 見 ながら 言っ た。"
         },
         {
             "translatedText": "",
-            "originalText": ""
-        },
-        {
-            "translatedText": "",
-            "originalText": ""
-        },
-        {
-            "translatedText": "",
-            "originalText": ""
+            "originalText": "茶色 がかっ た 金髪 が 酒杯 に 落ち ない よう、 空い て いる ほう の 手 で 軽く 押さえ ながら、 舐める よう に 酒杯 に 口 を つけ て いる。 「いくら なん でも、 一 樽 は 無理 だ」 　 そう 答え ながら も、 若者 は 同時に エール の お かわり を 店員 に 頼ん で い た。 「一杯 ぐらい じゃ、 喉 の 渇き が 収まら ない のも 確か だ けど な」"
         },
         {
             "translatedText": "",

@@ -5,8 +5,9 @@ import * as chapter01 from 'src/assets/rune-soldier/book01/chapter01.json';
 
 export interface Chapter {
   chunks: ChapterChunk[];
-  title: string;
+  chapterTitle: string;
   chapterNumber: number;
+  default?: Chapter;
 }
 
 @Component({
@@ -31,8 +32,8 @@ export class ChapterComponent implements OnInit {
   }
 
   private fakeInitChapter() {
-    console.log(chapter01.default);
-    return chapter01.default;
+    console.log(chapter01);
+    return chapter01;
   }
 
   public toggleTn() {
